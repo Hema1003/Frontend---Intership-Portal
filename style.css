@@ -1,0 +1,190 @@
+/* 🎨 Colors */
+:root {
+    --navy: #1B365D;
+    --red: #A6192E;
+    --white: #FFFFFF;
+    --gray: #F5F5F5;
+    --dark-gray: #2C2C2C;
+}
+
+/* 🌍 Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: var(--gray);
+    color: var(--navy);
+}
+
+/* 🔵 Navbar */
+/* 🔵 Navbar Styling */
+.navbar {
+    background: var(--navy);
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 🔹 Logo Styling */
+.logo img {
+    height: 60px; /* Adjust size as needed */
+    width: auto; /* Keep aspect ratio */
+    max-width: 300px; /* Prevents it from getting too big */
+    display: block;
+}
+
+/* 📌 Navbar Layout */
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--red);
+}
+
+/* 🎓 Hero Section */
+.hero {
+    background: url('sret-building.jpeg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+/* 📌 Main Layout */
+.main-container {
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* 📂 Sidebar */
+.sidebar {
+    width: 25%;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--navy);
+    font-weight: bold;
+    display: block;
+}
+
+.sidebar ul li.active {
+    background: var(--red);
+    color: var(--white);
+}
+
+.sidebar ul li.active a {
+    color: var(--white);
+}
+
+/* 📜 Content */
+.content {
+    width: 70%;
+    margin-left: 5%;
+}
+
+/* 🔴 Red Box */
+.red-box {
+    background: var(--red);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.red-box h2 {
+    font-size: 1.8rem;
+}
+
+.red-box .quick-links a {
+    color: var(--white);
+    display: block;
+    margin-top: 10px;
+}
+
+/* ⚫ Dark Box */
+.dark-box {
+    background: var(--dark-gray);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.dark-box h2 {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background: var(--red);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: var(--navy);
+}
+
+/* 📌 Footer */
+footer {
+    background: var(--navy);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
